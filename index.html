@@ -1,5 +1,25 @@
 <style>
-ul {
+body, input, button{
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        color: #222;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+#MenuBar {
+    list-style-type: none;
+    margin: 0;
+    padding 0;
+    overflow: hidden;
+}
+#BottomMenu {
     list-style-type: none;
     margin: 0;
     padding 0;
@@ -8,50 +28,69 @@ ul {
     background-color: #f3f3f3;
 
 }
+#BottomMenuCountry {
+    
+    list-style-type: none;
+    margin: 0;
+    padding 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+
+}
+
 li {
     float: right;
 }
 li a{
     display: block;
     color: #666;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 </style>
 
-<header>
-    <ul>
-        <li><a><button>Sign in</button></a></li>
-        <li><a><img src="iconMenu.png" alt="Icon menu"></a></li>
-        <li><a>Images</a></li>
-        <li><a>Gmail</a></li>    
-    </ul>
-</header>
-
 <body>
-    <img alt="Google logo"src="https://www.google.com.ar/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    <form>
-        <input title="asd">
-    </form>
-    <button>Google search</button>
-    <button>I'm Felling Lucky</button>
-    <br>
-    <h6>Google offered in: English Español (Latinoamérica)</h6>
-</body>
+    <header>
+        <ul id="MenuBar">
+            <li><a><button>Sign in</button></a></li>
+            <li><a><img src="iconMenu.png" alt="Icon menu"></a></li>
+            <li><a>Images</a></li>
+            <li><a>Gmail</a></li>    
+        </ul>
+    </header>
 
-<footer>
-    <ul>
-        <li><a>Argentina</a></li>
-    </ul>
-    <ul>
-        <li><a>About</a></li>
-        <li><a>Advertising</a></li>
-        <li><a>Business</a></li>
-        <li><a>How Search works</a></li>
-        <li><a>Privacy</a></li>
-        <li><a>Terms</a></li>
-        <li><a>Settings</a></li>
-    </ul>
-</footer>
+    <div class="center">
+        <br>
+        <br>
+        <img alt="Google logo"src="https://www.google.com.ar/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272" height="92">
+        <form>
+            <input title="asd">
+        </form>
+        <button>Google search</button>
+        <button>I'm Felling Lucky</button>
+        <br>
+        <br>
+        Google offered in: English Español (Latinoamérica)
+    </div>
+
+    <footer>
+        <ul id="BottomMenuCountry">
+            <li id="liCountry"><a>Argentina</a></li>
+        </ul>
+        <ul id="BottomMenu">
+            <div class="left">
+                <li><a>About</a></li>
+                <li><a>Advertising</a></li>
+                <li><a>Business</a></li>
+                <li><a>How Search works</a></li>
+            </div>
+            <div class="right">
+                <li><a>Privacy</a></li>
+                <li><a>Terms</a></li>
+                <li><a>Settings</a></li>
+            </div>
+        </ul>
+    </footer>
+</body>
