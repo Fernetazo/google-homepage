@@ -7,59 +7,47 @@ body, input, button{
 .center{
     text-align: center;
 }
-.right{
-    text-align: right;
-}
-.left{
-    text-align: left;
-}
-#MenuBar {
-    list-style-type: none;
-    margin: 0;
-    padding 0;
-    overflow: hidden;
-}
-#BottomMenu {
-    list-style-type: none;
-    margin: 0;
-    padding 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-
-}
-#BottomMenuCountry {
-    
-    list-style-type: none;
-    margin: 0;
-    padding 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-
-}
-
-li {
+.MenuBar{
+    display:flex;
     float: right;
+    color: black;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    padding: 10 10px;
+    
+    
 }
-li a{
-    display: block;
-    color: #666;
-    padding: 14px 16px;
-    text-decoration: none;
+.MenuBarLeft{
+    padding: 10px;
+
+}
+.MenuBarRight{
+    padding: 10px;
+    vertical-align: middle;
+}
+.Item{
+    padding: 5px;
+}
+.LogInButton{
+    background: #1a73e8;
+    border: 1px solid transparent;
+    color: #fff;
+    min-width: 96px;
+    min-height: 36px;
 }
 
 </style>
 
 <body>
-    <header>
-        <ul id="MenuBar">
-            <li><a><button>Sign in</button></a></li>
-            <li><a><img src="iconMenu.png" alt="Icon menu"></a></li>
-            <li><a>Images</a></li>
-            <li><a>Gmail</a></li>    
-        </ul>
-    </header>
+    <div class="MenuBar">
+        <div class="MenuBarLeft">
+            <a class="Item">Gmail</a>
+            <a class="Item">Images</a>
+        </div>
+        <div class="MenuBarRight">
+            <a class="Item"><img src="iconMenu.png" alt="Icon menu"></a>
+            <a><button class="LogInButton">Sign in</button></a>
+        </div>
+    </div>
 
     <div class="center">
         <br>
@@ -75,22 +63,22 @@ li a{
         Google offered in: English Español (Latinoamérica)
     </div>
 
-    <footer>
-        <ul id="BottomMenuCountry">
-            <li id="liCountry"><a>Argentina</a></li>
-        </ul>
-        <ul id="BottomMenu">
-            <div class="left">
-                <li><a>About</a></li>
-                <li><a>Advertising</a></li>
-                <li><a>Business</a></li>
-                <li><a>How Search works</a></li>
+    <div class="BottomMenu">
+        <div class="BottomMenu1">
+            <a>Argentina</a>
+        </div>
+        <div class="BottomMenu2">
+            <div class="BottomMenuLeftSide">
+                <a>About</a>
+                <a>Advertising</a>
+                <a>Business</a>
+                <a>How Search works</a>
             </div>
-            <div class="right">
-                <li><a>Privacy</a></li>
-                <li><a>Terms</a></li>
-                <li><a>Settings</a></li>
+            <div class="BottomMenuRightSide">
+                <a>Privacy</a>
+                <a>Terms</a>
+                <a>Settings</a>
             </div>
-        </ul>
-    </footer>
+        </div>
+    </div>
 </body>
