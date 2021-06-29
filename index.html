@@ -12,29 +12,30 @@ body, input, button{
     float: right;
     color: black;
     font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
-    padding: 10 10px;
-    
-    
 }
 .MenuBarLeft{
-    padding: 10px;
-
+    padding-top: 6px;
 }
 .MenuBarRight{
-    padding: 10px;
-    vertical-align: middle;
+    padding-left: 20px;
+    align-items: center;
 }
 .Item{
-    padding: 5px;
+    padding: 6px;
+}
+.ItemIcon{
+    padding: 6px;
+    vertical-align: middle;
 }
 .LogInButton{
     background: #1a73e8;
     border: 1px solid transparent;
+    border-radius: 5px;
     color: #fff;
     min-width: 96px;
     min-height: 36px;
+    vertical-align: middle;
 }
-
 </style>
 
 <body>
@@ -44,7 +45,7 @@ body, input, button{
             <a class="Item">Images</a>
         </div>
         <div class="MenuBarRight">
-            <a class="Item"><img src="iconMenu.png" alt="Icon menu"></a>
+            <a><img class="ItemIcon" src="iconMenu.png" alt="Icon menu"></a>
             <a><button class="LogInButton">Sign in</button></a>
         </div>
     </div>
