@@ -3,37 +3,39 @@ body{
     display: flex;
     flex-direction: column;
     font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
-    
     font-size: 14px;
-    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 input, button{
-    
     font-family: arial,sans-serif;
     color: #222;
 }
 a{
     padding: 15px;
 }
+form{
+    padding: 15px;
+}
 .MenuBar{
     display: flex;
     justify-content: right;
-    height: 12%;
+    height: 6%;
     color: black;
     flex-shrink: 0;
     box-sizing: border-box;
+    padding-top: 15px;
 }
 .MenuBarLeft{
     padding-top: 5px;
 }
-.MenuBarRight{
-    
-}
 .Item{
     padding: 6px;
 }
-.ItemIcon{
-    
+.ItemIcon{ 
     vertical-align: middle;
 }
 .LogInButton{
@@ -47,7 +49,7 @@ a{
 }
 .center{
     text-align: center;
-    height: 451px;
+    height: 479px;
 }
 input{
     width: 584px;
@@ -71,23 +73,27 @@ input{
     cursor: pointer;
     user-select: none;
 }
+.Language{
+    font-size: 13px;
+}
 .BottomMenu{
     display:flex;
     flex-direction: column;
-    
     color: rgba(0,0,0,.54);
-    background: #f2f2f2;
-    
+    background: #f2f2f2;;
+    flex-shrink: 0;
+    box-sizing: content-box;
+    width: 100%;
 }
 .BottomMenu1{
-    padding: 15 30px;
+    padding: 10 30px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
 }
 .BottomMenu2{
     display: flex;
     justify-content:space-between;
-    padding: 10 30px;
+    padding: 8 30px;
     font-size: 14px;
 }
 </style>
@@ -106,7 +112,6 @@ input{
 
     <div class="center">
         <br>
-        <br>
         <img alt="Google logo"src="https://www.google.com.ar/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272" height="92">
         <form>
             <input title="InputBox">
@@ -115,7 +120,7 @@ input{
         <button class="Botonera">I'm Felling Lucky</button>
         <br>
         <br>
-        Google offered in: English Español (Latinoamérica)
+        <a class="Language">Google offered in: English Español (Latinoamérica)</a>
     </div>
 
     <div class="BottomMenu">
